@@ -1,2 +1,6 @@
 /* MODELO DE CAIXA
 */
+
+.conteudo{
+    border: 1px solid red;
+}
