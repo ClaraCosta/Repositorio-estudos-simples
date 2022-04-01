@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição</title>
+</head>
+
+<style>
+/*
+Nova propriedade (z-index), essa propriedade irá definir,
+qual elemento aparece primeiro. Quanto maior o número do
+z-index, mais a frente ele irá aparecer.
+*/
+
+    .conteudo1 {
+        border: 1px red solid;
+        background:rgb(103, 2, 170);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .conteudo2 {
+        border: 1px red solid;
+        background:rgb(206, 32, 32);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        z-index: 2;
+    }
+
+    .conteudo3 {
+        border: 1px red solid;
+        background:rgb(238, 223, 10);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 160px;
+        left: 160px;
+        z-index: 3;
+    }
+
+</style>
+</style>
+<body>
+    <div class="conteudo1">Conteudo 1</div>
+
+    <div class="conteudo2">Conteudo 2</div>
+
+    <div class="conteudo3">Conteudo 3</div>
+    
+</body>
+</html>
