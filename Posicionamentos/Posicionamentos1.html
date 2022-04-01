@@ -4,3 +4,162 @@
     <meta charset="UTF-8">
     <title>Posicionamentos (Static, relative, absolute, fixed)</title>
 </head>
+
+<!--
+    Esse projeto utilizará o CSS interno no código html
+-->
+
+<body>
+    <style>
+
+        body {
+            background: #007fc3;
+        }
+        #container{
+            background: #FFF;
+            width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            position: relative;
+        }
+
+/*
+O posicionamento estático, é o posicionamento
+padrão aplicado nos elementos.
+*/
+        h1 {
+            position: static;
+        }
+
+        p {
+            width: 300px;
+        }
+
+/*Com o posicionamento fixted, significa que o elemento está
+fixo em relação a janela do seu navegador*/
+
+/*A posição fixa pode ser utilizada, por exemplo, para chats,
+menus e outros conteúdos*/
+
+        .fixed {
+            margin: 0px;
+            border: 1px solid red;
+            position: fixed;
+            background: #f2f2f2;
+            top: 0px;
+            right: 0px;
+            
+        }
+
+
+        .absolute {
+            border: 1px solid red;
+            position: absolute;
+            background: #f2f2f2;
+            top: 80px;
+            right: 80px;
+        }
+
+        .relative{
+            border: 1px solid red;
+            position: relative;
+            top: 20px;
+
+            /*Quando utilizado o position relative, as modificações de posições
+            são feitas para outros locais do código, apartir da sua posição inicial*/
+        }
+
+    </style>
+
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p>
+            P1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna 
+            magna viverra lobortis metus ut, ornare tempor orci. Integer dui arcu, pulvinar v
+            tincidunt sit amet, dapibus in magna. Etiam elementum ligula congue arcu hendrerit 
+            luctus. Sed vel molestie urna. Donec feugiat sem nec leo accumsan scelerisque. Int
+            eger nec tellus quis lorem dignissim ornare vitae nec dui. In ac nisi sed mi elemen
+            tum dictum. Nunc gravida imperdiet fringilla. Nunc hendrerit risus ut fermentum fau
+            cibus. Vestibulum ultricies ultrices lacus, ac vestibulum est. Cras placerat neque 
+            eu condimentum faucibus. Aliquam dapibus molestie dui, vitae bibendum dui rutrum eu. 
+            Sed faucibus sit amet mauris et consequat. Vestibulum feugiat, leo non imperdiet int
+            erdum, ex sapien efficitur dolor, ullamcorper sollicitudin mi arcu ac felis.
+        </p>
+
+<!--
+    Para utilizar o position relative, são necessárias propriedades de deslocamento.
+    Essas propriedades são:
+    -Top
+    -Rigth
+    -Left
+    -Bottom
+
+    São adicionadas dentro do código CSS
+-->
+
+        <p class="fixed">
+            P2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna 
+            viverra lobortis metus ut, ornare tempor orci. Integer dui arcu, pulvinar vitae 
+            tincidunt sit amet, dapibus in magna. Etiam elementum ligula congue arcu hendrerit 
+            luctus. Sed vel molestie urna. Donec feugiat sem nec leo accumsan scelerisque. Int
+            eger nec tellus quis lorem dignissim ornare vitae nec dui. In ac nisi sed mi elemen
+            tum dictum. Nunc gravida imperdiet fringilla. Nunc hendrerit risus ut fermentum fau
+            cibus. Vestibulum ultricies ultrices lacus, ac vestibulum est. Cras placerat neque 
+            eu condimentum faucibus. Aliquam dapibus molestie dui, vitae bibendum dui rutrum eu. 
+            Sed faucibus sit amet mauris et consequat. Vestibulum feugiat, leo non imperdiet int
+            erdum, ex sapien efficitur dolor, ullamcorper sollicitudin mi arcu ac felis.
+        </p>
+        
+        <p>
+            P3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna, 
+            viverra lobortis metus ut, ornare tempor orci. Integer dui arcu, pulvinar vitae 
+            tincidunt sit amet, dapibus in magna. Etiam elementum ligula congue arcu hendrerit 
+            luctus. Sed vel molestie urna. Donec feugiat sem nec leo accumsan scelerisque. Int
+            eger nec tellus quis lorem dignissim ornare vitae nec dui. In ac nisi sed mi elemen
+            tum dictum. Nunc gravida imperdiet fringilla. Nunc hendrerit risus ut fermentum fau
+            cibus. Vestibulum ultricies ultrices lacus, ac vestibulum est. Cras placerat neque 
+            eu condimentum faucibus. Aliquam dapibus molestie dui, vitae bibendum dui rutrum eu. 
+            Sed faucibus sit amet mauris et consequat. Vestibulum feugiat, leo non imperdiet int
+            erdum, ex sapien efficitur dolor, ullamcorper sollicitudin mi arcu ac felis.
+        </p>
+
+        <p>
+            P3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna, 
+            viverra lobortis metus ut, ornare tempor orci. Integer dui arcu, pulvinar vitae 
+            tincidunt sit amet, dapibus in magna. Etiam elementum ligula congue arcu hendrerit 
+            luctus. Sed vel molestie urna. Donec feugiat sem nec leo accumsan scelerisque. Int
+            eger nec tellus quis lorem dignissim ornare vitae nec dui. In ac nisi sed mi elemen
+            tum dictum. Nunc gravida imperdiet fringilla. Nunc hendrerit risus ut fermentum fau
+            cibus. Vestibulum ultricies ultrices lacus, ac vestibulum est. Cras placerat neque 
+            eu condimentum faucibus. Aliquam dapibus molestie dui, vitae bibendum dui rutrum eu. 
+            Sed faucibus sit amet mauris et consequat. Vestibulum feugiat, leo non imperdiet int
+            erdum, ex sapien efficitur dolor, ullamcorper sollicitudin mi arcu ac felis.
+        </p>
+
+        <p>
+            P3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna, 
+            viverra lobortis metus ut, ornare tempor orci. Integer dui arcu, pulvinar vitae 
+            tincidunt sit amet, dapibus in magna. Etiam elementum ligula congue arcu hendrerit 
+            luctus. Sed vel molestie urna. Donec feugiat sem nec leo accumsan scelerisque. Int
+            eger nec tellus quis lorem dignissim ornare vitae nec dui. In ac nisi sed mi elemen
+            tum dictum. Nunc gravida imperdiet fringilla. Nunc hendrerit risus ut fermentum fau
+            cibus. Vestibulum ultricies ultrices lacus, ac vestibulum est. Cras placerat neque 
+            eu condimentum faucibus. Aliquam dapibus molestie dui, vitae bibendum dui rutrum eu. 
+            Sed faucibus sit amet mauris et consequat. Vestibulum feugiat, leo non imperdiet int
+            erdum, ex sapien efficitur dolor, ullamcorper sollicitudin mi arcu ac felis.
+        </p>
+
+        <p>
+            P3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna, 
+            viverra lobortis metus ut, ornare tempor orci. Integer dui arcu, pulvinar vitae 
+            tincidunt sit amet, dapibus in magna. Etiam elementum ligula congue arcu hendrerit 
+            luctus. Sed vel molestie urna. Donec feugiat sem nec leo accumsan scelerisque. Int
+            eger nec tellus quis lorem dignissim ornare vitae nec dui. In ac nisi sed mi elemen
+            tum dictum. Nunc gravida imperdiet fringilla. Nunc hendrerit risus ut fermentum fau
+            cibus. Vestibulum ultricies ultrices lacus, ac vestibulum est. Cras placerat neque 
+            eu condimentum faucibus. Aliquam dapibus molestie dui, vitae bibendum dui rutrum eu. 
+            Sed faucibus sit amet mauris et consequat. Vestibulum feugiat, leo non imperdiet int
+            erdum, ex sapien efficitur dolor, ullamcorper sollicitudin mi arcu ac felis.
+        </p>
+    </div>
+</body>
