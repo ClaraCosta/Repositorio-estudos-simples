@@ -1,15 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatando links</title>
     <style type="text/css">
-    
+            /*
+            Nos links, podem ser definidos alguns estados, por exemplo, os links que já
+            foram visitados.
+
+            Exemplo de link em seu estado normal (Não visitados): 
+            */
+        a {
+            margin: 15px;
+            padding: 5px;
+            text-decoration: none;
+        }    
+        
+
+        a:link {
+            color: rgb(89, 197, 0);
+        }
+
+        a:visited {
+            color: rgb(89, 197, 0);
+        }
+
+        a:hover {
+            color: #FFF;
+            background:rgb(255, 111, 28);
+            border-radius: 10%;
+        }
+
+        /*Links ativos/clicados*/
+
+        a:active {
+            color: rgb(0, 162, 255);
+        }
+
+
     </style>
 </head>
 <body>
-    <a href="www.google.com"></a>
+    <a href="www.google.com">Google</a> |  
+
+    <!---
+    O Pipe ( | ) pode ser utilizado entre tags para formatar links,
+    acima, no primeiro link, temos um exemplo disso.
+    -->
+
+    <a href="www.tecmundo.com.br">Tec Mundo</a> |
+
+    <a href="www.megacurioso.com.br">Mega Curioso</a>   
 </body>
 </html>
