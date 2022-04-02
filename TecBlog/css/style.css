@@ -51,7 +51,17 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     background: white;
+}
 
+.conteudo-lateral {
+    background: white;
+    padding: 20px 10px;
+}
+
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
 }
 
 /*O bloco da área principal está centralizado, pois, as laterais estão
@@ -99,6 +109,12 @@ h2{
     color: #f7b600;
 }
 
+h3{
+    background-color: #ccc;
+    color: #565656;
+    padding: 5px;
+}
+
 .branco {
     color: white;
 }
@@ -110,3 +126,4 @@ h2{
     margin-bottom: 10px;
     display: block;
 }
+
