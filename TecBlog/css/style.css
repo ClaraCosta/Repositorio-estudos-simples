@@ -27,18 +27,20 @@ body {
 
 a:link, a:visited {
     color: #FFF;
+    margin: 5px;
+    padding: 5px;
 }
 
 a {
     color: #FFF;
     text-decoration: none;
-    margin: 5px;
-    padding: 5px;
+    
 }
 
 a:hover {
     color:#f7b600;
     background-color: #FFF;
+    border-radius: 2px;
 
 }
 
