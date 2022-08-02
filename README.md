@@ -19,7 +19,5 @@ aprendizado de alguns conceitos de desenvolvimento web
 
 <hr>
 
-<h4><strong>Observação: </strong>Esse repositório tem os projetos realizados utilizando o curso de Desenvolvimento Web, criado por Jorge Sant Ana e Jamilton Damascendo.
 
-<strong>Link para acesso em: </strong> https://www.udemy.com/course/web-completo/
-</h5>
+
